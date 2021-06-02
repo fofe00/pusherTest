@@ -27,3 +27,5 @@ Route::get('/fichier', 'FichierController@form')->name('up_form');
 Route::post('/fichier', 'FichierController@getFile')->name('post_form');
 Route::get('/getFilePerUser', 'FichierController@getFilePerUser');
 
+Route::get('/upload-file', 'FileUploadController@createForm')->name('createForm');
+Route::post('/upload-file', 'FileUploadController@fileUpload')->name('fileUpload');
